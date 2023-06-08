@@ -4,8 +4,8 @@ import axios from "axios"
 
 function App() {
   const inputRef = useRef()
-  const [urlResult, setUrlResult] = useState()
-  const [audioResult, setAudioResult] = useState()
+  const [urlResult, setUrlResult] = useState(null)
+  const [audioResult, setAudioResult] = useState(null)
 
 
   const handleSubmit = (e) => {
@@ -31,7 +31,7 @@ function App() {
       })
       .catch(err => console.log(err))
 
-    console.log(audioResult);
+    inputRef.current.value = ""
   }
 
   return (
