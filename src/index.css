@@ -8,6 +8,15 @@
   text-align: center;
 }
 
+.coder {
+  margin-bottom: 3vh;
+}
+
+.content {
+  padding-top: 10vh;
+
+}
+
 .form__button {
   margin-top: 2vh;
   text-align: center;
@@ -21,6 +30,11 @@
 a {
   text-decoration: inherit;
   color: inherit;
+}
+
+.video {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 768px) {

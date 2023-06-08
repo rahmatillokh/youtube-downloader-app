@@ -41,7 +41,9 @@ function App() {
       <div className="content">
         <h1>Download from Youtube</h1>
         <p>This app is used for downloading videos <br /> or audios from Youtube</p>
-        <a href="https://github.com/rahmatillokh">Coder</a>
+        <div className="coder">
+          <a href="https://github.com/rahmatillokh">Coder</a>
+        </div>
       </div>
 
       <form className="form-floating mb-3 app__form" onSubmit={handleSubmit}>
@@ -49,7 +51,9 @@ function App() {
         <label htmlFor="floatingInput">Link here</label>
         <button type="submit" className="btn btn-primary form__button">Search</button>
       </form>
-      {urlResult ? <a target="_blank" href={urlResult}>Download video</a> : ""} <br />
+      {urlResult ? <div className="video">
+        <a target="_blank" href={urlResult}>Download video</a>
+      </div> : ""} <br />
       {audioResult ? <a target="_blank" href={audioResult}>Download audio</a> : ""}
     </div>
   )
