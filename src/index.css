@@ -1,0 +1,32 @@
+.app__form {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.app {
+  text-align: center;
+}
+
+.form__button {
+  margin-top: 2vh;
+  text-align: center;
+}
+
+.app .content a {
+  margin-bottom: 10vh;
+  color: #123;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  .app__form {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
